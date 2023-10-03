@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Jogo {
     private Tabuleiro tabuleiro;
-    private int rodada=1, vez=1;
+    public int rodada=1, vez=1;
     private Jogador  jogador1;
     private Jogador jogador2;
     public Scanner sc = new Scanner(System.in);
@@ -50,6 +50,7 @@ public class Jogo {
     }
 
     public boolean Jogar(){
+        System.out.println("O jogo irá começar, você vai escolher em qual linha e coluna irá marcar. Cuidado para não se confundir, ein! kkk");
         if (ganhou() == 0){
             System.out.println("__________________");
             System.out.println("\nRodada "+rodada);
@@ -60,7 +61,7 @@ public class Jogo {
             else
                 jogador2.jogar(tabuleiro);
 
-            if (tabuleiro.tabuleiroCompleto()){
+            if (tabuleiro.tabuleiroCompleto() && ganhou()==0){
                 System.out.println("Ops!! Deu velha");
                 return false;
             }

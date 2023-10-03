@@ -1,5 +1,7 @@
 package Tabuleiro;
 
+import JogoDaVelha.Jogo;
+
 public class Tabuleiro {
     private int[][] tabuleiro = new int[3][3];
 
@@ -84,6 +86,6 @@ public class Tabuleiro {
             for (int coluna = 0 ; coluna < 3 ; coluna++)
                 if (tabuleiro[linha][coluna]==0)
                     return false;
-       return true;
+        return true;
     }
 }
