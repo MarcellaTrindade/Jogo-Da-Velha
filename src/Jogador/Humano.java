@@ -1,7 +1,6 @@
 package Jogador;
-import Jogador.Jogador;
-import Tabuleiro.Tabuleiro;
 
+import Tabuleiro.Tabuleiro;
 import java.util.Scanner;
 
 public class Humano extends Jogador{

@@ -16,6 +16,7 @@ public class Jogo {
     public Jogo(){
         tabuleiro = new Tabuleiro();
         iniciarJogadores();
+        System.out.println("O jogo irá começar, você vai escolher em qual linha e coluna irá marcar. Cuidado para não se confundir, ein! kkk");
         while(Jogar());
     }
 
@@ -48,9 +49,8 @@ public class Jogo {
         }while(opcao != 1 && opcao != 2);
         return opcao;
     }
-
     public boolean Jogar(){
-        System.out.println("O jogo irá começar, você vai escolher em qual linha e coluna irá marcar. Cuidado para não se confundir, ein! kkk");
+
         if (ganhou() == 0){
             System.out.println("__________________");
             System.out.println("\nRodada "+rodada);

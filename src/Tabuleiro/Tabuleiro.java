@@ -1,7 +1,5 @@
 package Tabuleiro;
 
-import JogoDaVelha.Jogo;
-
 public class Tabuleiro {
     private int[][] tabuleiro = new int[3][3];
 

@@ -1,7 +1,6 @@
 package Jogador;
-import java.lang.Math;
-import java.util.Random;
 
+import java.util.Random;
 import Tabuleiro.Tabuleiro;
 
 public class Computador extends Jogador{
